@@ -1,0 +1,202 @@
+<!-- Call-back Modal -->
+<div class="modal fade" id="order-call" tabindex="-1" role="dialog" aria-labelledby="order-callLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="order-callLabel">закажите звонок</h5>
+				<div class="modal-note">Оставьте Ваш телефон и наш менеджер перезвонит вам в ближайшее время</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="text" class="modal-form__input user-ico" name="name" required placeholder="Ваше имя *">
+					<input type="text" class="modal-form__input phone-ico" name="phone" required placeholder="Телефон *">
+					<input type="text" class="modal-form__input time-ico" name="time"
+						placeholder="Удобное время для звонка (по Мск)">
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">отправить</button>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+				<div class="modal-policy">
+					Нажимая кнопку “Отправить”, Вы подтверждаете, что ознакомлены с <a href="#" target="_blank">политикой
+						конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Sign-In Modal -->
+<div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-modalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="sign-in-modalLabel">вход в личный кабинет</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="text" class="modal-form__input user-ico" name="login" required
+						placeholder="Логин / номер телефона *">
+					<input type="password" class="modal-form__input star-ico" name="password" required placeholder="Пароль *">
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">войти в кабинет</button>
+					</div>
+					<div class="modal-form__links">
+						<a href="#restore-pwd-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Забыли
+							пароль?</a>
+						<a href="#reg-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Регистрация</a>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Registration Modal -->
+<div class="modal fade" id="reg-modal" tabindex="-1" role="dialog" aria-labelledby="reg-modalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="reg-modalLabel">регистрация</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="text" class="modal-form__input user-ico" name="login" required
+						placeholder="Логин / номер телефона *">
+					<input type="text" class="modal-form__input phone-ico" name="phone" required placeholder="Телефон *">
+					<input type="email" class="modal-form__input email-ico" name="email" required placeholder="Email *">
+					<input type="password" class="modal-form__input star-ico" name="password" required placeholder="Пароль *">
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">Зарегистрироваться</button>
+					</div>
+					<div class="modal-form__links">
+						<a href="#sign-in-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Вход в
+							кабинет</a>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+				<div class="modal-policy">
+					Нажимая кнопку “Отправить”, Вы подтверждаете, что ознакомлены с <a href="#" target="_blank">политикой
+						конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Restore Password Modal -->
+<div class="modal fade" id="restore-pwd-modal" tabindex="-1" role="dialog" aria-labelledby="restore-pwd-modalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="restore-pwd-modalLabel">вход в личный кабинет</h5>
+				<div class="modal-note">Введите электронную почту, которую <br> Вы использовали при регистрации</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="email" class="modal-form__input email-ico" name="email" required placeholder="Email *">
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">восстановить пароль</button>
+					</div>
+					<div class="modal-form__links">
+						<a href="#sign-in-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Вход в
+							кабинет</a>
+						<a href="#reg-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Регистрация</a>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Buy in one click Modal -->
+<div class="modal fade" id="buy-in-one-click" tabindex="-1" role="dialog" aria-labelledby="buy-in-one-clickLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="buy-in-one-clickLabel">покупка в 1 клик</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="text" class="modal-form__input user-ico" name="user-fio" required
+						placeholder="Фамилия Имя Отчество *">
+					<input type="text" class="modal-form__input phone-ico" name="phone" required placeholder="Телефон *">
+					<input type="email" class="modal-form__input email-ico" name="email" required placeholder="Email *">
+					<textarea name="order-comment" class="modal-form__text msg-ico" cols="30" rows="10" required
+						placeholder="Комментарий к заказу *"></textarea>
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">оформить заказ</button>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+				<div class="modal-policy">
+					Нажимая кнопку “Отправить”, Вы подтверждаете, что ознакомлены с <a href="#" target="_blank">политикой
+						конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Feed back Modal -->
+<div class="modal fade" id="feed-back-modal" tabindex="-1" role="dialog" aria-labelledby="feed-back-modalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="feed-back-modalLabel">обратная связь</h5>
+				<div class="modal-note">У Вас есть вопрос или предложение, <br> напишите нам и наши менеджеры ответят <br> в
+					ближайшее время!</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<form action="" class="modal-form">
+					<input type="text" class="modal-form__input user-ico" name="user-fio" required
+						placeholder="Фамилия Имя Отчество *">
+					<input type="text" class="modal-form__input phone-ico" name="phone" required placeholder="Телефон *">
+					<input type="email" class="modal-form__input email-ico" name="email" required placeholder="Email *">
+					<textarea name="message" class="modal-form__text msg-ico" cols="30" rows="10" required
+						placeholder="Текст сообщения *"></textarea>
+					<div class="modal-form__btn">
+						<button class="btn btn-warning btn-lg" type="submit">отправить</button>
+					</div>
+					<div class="modal-form__links">
+						<a href="#sign-in-modal" class="modal-form__link" data-dismiss="modal" data-toggle="modal">Вход в
+							кабинет</a>
+					</div>
+					<div class="modal-form__note">* поля обязательны для заполнения</div>
+				</form>
+				<div class="modal-policy">
+					Нажимая кнопку “Отправить”, Вы подтверждаете, что ознакомлены с <a href="#" target="_blank">политикой
+						конфиденциальности</a> и <a href="#" target="_blank">пользовательским соглашением</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Added to cart Modal -->
+<div class="modal fade" id="added-to-cart-modal" tabindex="-1" role="dialog" aria-labelledby="added-to-cart-modalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="modal-title-image"><img src="./img/modal-elements/tick.png" alt="img"></div>
+				<h5 class="modal-title" id="added-to-cart-modalLabel">товар добавлен в корзину</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body__links">
+					<a class="modal-body__link btn btn-warning btn-lg" data-dismiss="modal">оформить заказ</a>
+					<a class="modal-body__link btn btn-outline-primary btn-lg" data-dismiss="modal">продолжить
+						покупки</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
