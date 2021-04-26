@@ -667,10 +667,15 @@ h3.title {
   // .blog__post
   &__post {
   }
+  // .blog__subscribe-wrapper
+  &__subscribe-wrapper {
+    background-color: var(--gray10);
+  }
   // .blog__subscribe
   &__subscribe {
     max-width: 283px;
-    margin: 8px auto 0;
+    margin: 0 auto;
+    padding-top: 8px;
   }
   // .blog__blog-btn
   &__blog-btn {
@@ -1087,5 +1092,31 @@ h3.title {
   &:hover {
     background-color: var(--white);
     border-color: var(--blue);
+  }
+}
+
+/*blog page*/
+.blog-page {
+  padding-top: 42px;
+  padding-bottom: 150px;
+  .blog {
+    padding-top: 33px;
+    background: none !important;
+    .section-note {
+      max-width: none;
+      margin: 33px 0 69px;
+      font-size: 18px;
+    }
+    .post-blog {
+      margin-bottom: 63px;
+    }
+    .blog__subscribe-wrapper {
+      padding-bottom: 23px;
+    }
+  }
+  // .blog-page__show-more
+  &__show-more {
+    margin-top: 6px;
+    margin-bottom: 30px;
   }
 }
