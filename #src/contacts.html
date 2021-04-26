@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More magazin</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('_header.html')
+    <div class="page-content contacts-page">
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="section-title text-left">контакты</h2>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contacts__item contact-item__name">Адрес шоурума:</div>
+                        <div class="contact-item__text1">
+                            Санкт-Петербург, <br>
+                            ст.м. "Сенная площадь"
+                        </div>
+                        <div class="contact-item__text2">
+                            ул. Ефимова, д. 1/4, <br>
+                            Бизнес-центр "Сенная, 4"
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contacts__item contact-item__name">Режим работы:</div>
+                        <div class="contact-item__text1">
+                            Пн-Сб с 10:00 до 20:00 <br>
+                            Вс с 10:00 до 19:00
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contacts__item contact-item__name">Телефоны:</div>
+                        <div class="contact-item__text1">
+                            8 (812) 123 45 67 <br>
+                            +7 (921) 123 45 67
+                        </div>
+                        <div class="contact-item__link">
+                            <a href="#order-call" data-toggle="modal">ЗАКАЗАТЬ ЗВОНОК</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="contacts__item contact-item__name">Электронная почта:</div>
+                        <div class="contact-item__text1">
+                            <a href="mailto:info@moremagazin.ru">info@moremagazin.ru</a>
+                        </div>
+                        <div class="contact-item__link">
+                            <a href="#feed-back-modal" data-toggle="modal">обратная связь</a>
+                        </div>
+                        <ul class="contact-item__social contacts-social">
+                            <li class="contacts-social__item">
+                                <a href="#" target="_blank" class="contacts-social__link">
+                                    <img src="./img/social/vk.svg" alt="VK" width="33">
+                                </a>
+                            </li>
+                            <li class="contacts-social__item">
+                                <a href="#" target="_blank" class="contacts-social__link">
+                                    <img src="./img/social/facebook.svg" alt="FB" width="33">
+                                </a>
+                            </li>
+                            <li class="contacts-social__item">
+                                <a href="#" target="_blank" class="contacts-social__link">
+                                    <img src="./img/social/instagram.png" alt="Insta" width="33">
+                                </a>
+                            </li>
+                            <li class="contacts-social__item">
+                                <a href="#" target="_blank" class="contacts-social__link">
+                                    <img src="./img/social/youtube.svg" alt="YT" width="33">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.3575276296804!2d30.31727841638466!3d59.926209381871615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963101bd88bd1d%3A0x8ecb59f06dc5c5d2!2z0YPQuy4g0JXRhNC40LzQvtCy0LAsIDEvNCwgMjA1LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1619432984093!5m2!1sru!2s"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="contacts__info">
+                            ООО “Море магазин” <br>
+                            ИНН 123456789 <br>
+                            Юридический адрес: 190100, Санкт-Петербург, ул. Ефимова 1/4, оф. 205
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    @@include('_footer.html')
+    @@include('_modal.html')
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
