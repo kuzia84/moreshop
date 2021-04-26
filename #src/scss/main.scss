@@ -1120,3 +1120,99 @@ h3.title {
     margin-bottom: 30px;
   }
 }
+
+/*catalog page*/
+.catalog-page {
+  padding: 42px 0 150px 0;
+  .section-title {
+    margin: 45px 0 38px;
+  }
+}
+.catalog {
+  // .catalog__item
+  &__item {
+    border: 2px solid var(--gray10);
+    transition: 0.3s ease-in-out;
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+    &:hover {
+      border-color: var(--blue);
+    }
+  }
+}
+.item-catalog {
+  // .item-catalog__image
+  &__image {
+    min-height: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .item-catalog__info
+  &__info {
+    flex: 1 1 100%;
+    padding: 17px 0;
+    align-self: center;
+  }
+  // .item-catalog__name
+  &__name {
+    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    span {
+      display: inline-block;
+      padding-right: 54px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 19px;
+        height: 17px;
+        display: inline-block;
+        background: url("../img/slider-elements/arr-right.png") 0 50% no-repeat;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+  // .item-catalog__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &:hover {
+    .item-catalog__name {
+      color: var(--blue);
+      span {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.sub-cat-list {
+  // .sub-cat-list__item
+  &__item {
+    flex: 0 0 50%;
+  }
+  // .sub-cat-list__link
+  &__link {
+    font-size: 22px;
+    line-height: 40px;
+    color: var(--gray900);
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
