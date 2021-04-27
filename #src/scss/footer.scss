@@ -48,7 +48,7 @@
     &__phone {
         color: var(--white);
         display: block;
-        font-family: "PFDinTextCompPro-Medium", sans-serif;
+        font-family: var(--medium-comp);
         font-size: 33px;
         letter-spacing: -1.5px;
     }
@@ -86,7 +86,7 @@
 .nav-footer {
     // .nav-footer__title
     &__title {
-        font-family: "PFDinTextCompPro-Medium", sans-serif;
+        font-family: var(--medium-comp);
         font-size: 22px;
         line-height: 25px;
         text-transform: uppercase;

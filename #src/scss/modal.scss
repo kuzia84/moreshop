@@ -33,14 +33,14 @@
         margin: -8px 0 20px 0;
     }
     .modal-title {
-        font-family: "PFDinTextCompPro-Medium", sans-serif;
+        font-family: var(--medium-comp);
         font-size: 48px;
         line-height: 50px;
         text-transform: uppercase;
         padding-bottom: 17px;
     }
     .modal-note {
-        font-family: "PFDinTextPro-Light", sans-serif;
+        font-family: var(--light-font);
         font-size: 18px;
         line-height: 24px;
         max-width: 360px;
@@ -65,7 +65,7 @@
             background-repeat: no-repeat;
             margin-bottom: 20px;
             padding-left: 60px;
-            font-family: "PFDinTextPro-Light", sans-serif;
+            font-family: var(--light-font);
             font-size: 16px;
             &.user-ico {
                 background-image: url("../img/modal-elements/user.png");
@@ -96,7 +96,7 @@
             margin-bottom: 20px;
             padding-left: 60px;
             padding-top: 22px;
-            font-family: "PFDinTextPro-Light", sans-serif;
+            font-family: var(--light-font);
             font-size: 16px;
             resize: none;
             &.msg-ico {
@@ -113,7 +113,7 @@
         }
         // .modal-form__note
         &__note {
-            font-family: "PFDinTextPro-Light", sans-serif;
+            font-family: var(--light-font);
             font-size: 13px;
             line-height: 18px;
             color: var(--gray900);
@@ -138,7 +138,7 @@
         }
     }
     .modal-policy {
-        font-family: "PFDinTextPro-Light", sans-serif;
+        font-family: var(--light-font);
         font-size: 13px;
         line-height: 18px;
         color: var(--gray900);

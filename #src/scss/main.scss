@@ -2,6 +2,7 @@
   --black: #000;
   --white: #fff;
   --gray10: #f4f3f3;
+  --gray300: #6c6c6c;
   --gray400: #7f7f7f;
   --gray500: #9b9b9b;
   --gray600: #6d6d6d;
@@ -21,9 +22,17 @@
   --orange800: #f37d00;
   --orange900: #ec6638;
   --red: #cc1e3a;
+  --thin-font: "PFDinTextPro-Thin", sans-serif;
+  --regular-font: "PFDinTextPro-Regular", sans-serif;
+  --light-font: "PFDinTextPro-Light", sans-serif;
+  --medium-font: "PFDinTextPro-Medium", sans-serif;
+  --regular-comp: "PFDinTextCompPro-Regular", sans-serif;
+  --light-comp: "PFDinTextCompPro-Light", sans-serif;
+  --medium-comp: "PFDinTextCompPro-Medium", sans-serif;
+  --bold-comp: "PFDinTextCompPro-Bold", sans-serif;
 }
 body {
-  font-family: "PFDinTextPro-Regular", sans-serif;
+  font-family: var(--regular-font);
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -113,7 +122,7 @@ textarea {
 /*buttons*/
 .btn {
   border-radius: 0;
-  font-family: "PFDinTextCompPro-Medium", sans-serif;
+  font-family: var(--medium-comp);
   text-transform: uppercase;
   font-size: 20px;
   padding: 11px 12px;
@@ -226,7 +235,7 @@ textarea {
     height: 164px;
     display: flex;
     align-items: center;
-    font-family: "PFDinTextCompPro-Bold", sans-serif;
+    font-family: var(--bold-comp);
     color: var(--white);
     font-size: 40px;
     letter-spacing: -1.5px;
@@ -257,7 +266,7 @@ textarea {
   }
   // .slider-banners__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 60px;
     text-transform: uppercase;
     letter-spacing: -1.5px;
@@ -265,7 +274,7 @@ textarea {
   }
   // .slider-banners__txt
   &__txt {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 28px;
     color: var(--gray900);
@@ -290,7 +299,7 @@ textarea {
   }
   // .slider-banners__discount
   &__discount {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 37px;
     color: var(--white);
     background-color: var(--orange);
@@ -313,7 +322,7 @@ textarea {
   }
   // .slider-banners__new-price
   &__new-price {
-    font-family: "PFDinTextPro-Medium", sans-serif;
+    font-family: var(--medium-font);
     color: var(--orange);
     font-size: 30px;
   }
@@ -332,13 +341,13 @@ textarea {
 /*section title + note*/
 h2.section-title {
   text-align: center;
-  font-family: "PFDinTextCompPro-Medium", sans-serif;
+  font-family: var(--medium-comp);
   font-size: 48px;
   text-transform: uppercase;
   margin: 0;
 }
 h3.title {
-  font-family: "PFDinTextCompPro-Medium", sans-serif;
+  font-family: var(--medium-comp);
   font-size: 36px;
   line-height: 50px;
   margin: 0;
@@ -347,7 +356,7 @@ h3.title {
 }
 .section-note {
   text-align: center;
-  font-family: "PFDinTextPro-Light", sans-serif;
+  font-family: var(--light-font);
   font-size: 22px;
   line-height: 30px;
 }
@@ -393,7 +402,7 @@ h3.title {
   }
   // .swichers-slider__link
   &__link {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     color: var(--blue);
     text-transform: uppercase;
@@ -490,7 +499,7 @@ h3.title {
     left: -16px;
     text-align: center;
     text-transform: uppercase;
-    font-family: "PFDinTextCompPro-Light", sans-serif;
+    font-family: var(--light-comp);
     font-size: 14px;
     line-height: 30px;
     color: var(--black);
@@ -505,7 +514,7 @@ h3.title {
     top: -2px;
     width: 68px;
     height: 24px;
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 13px;
     color: var(--white);
     text-transform: uppercase;
@@ -522,7 +531,7 @@ h3.title {
   }
   // .slider-main__price
   &__price {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 24px;
     line-height: 30px;
     display: flex;
@@ -541,7 +550,7 @@ h3.title {
   }
   // .slider-main__stock
   &__stock {
-    font-family: "PFDinTextCompPro-Regular", sans-serif;
+    font-family: var(--regular-comp);
     font-size: 14px;
     line-height: 30px;
     text-transform: uppercase;
@@ -621,7 +630,7 @@ h3.title {
 .item-prop {
   display: flex;
   justify-content: space-between;
-  font-family: "PFDinTextPro-Light", sans-serif;
+  font-family: var(--light-font);
   font-size: 14px;
   line-height: 22px;
   // .item-prop__name
@@ -734,13 +743,13 @@ h3.title {
   // .post-blog__date
   &__date {
     color: var(--blue);
-    font-family: "PFDinTextCompPro-Light", sans-serif;
+    font-family: var(--light-comp);
     font-size: 18px;
     margin-bottom: 15px;
   }
   // .post-blog__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     line-height: 43px;
     text-transform: uppercase;
@@ -754,7 +763,7 @@ h3.title {
   }
   // .post-blog__text
   &__text {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 16px;
     line-height: 26px;
     margin-top: 16px;
@@ -765,7 +774,7 @@ h3.title {
   }
   // .post-blog__more-link
   &__more-link {
-    font-family: "PFDinTextCompPro-Regular", sans-serif;
+    font-family: var(--regular-comp);
     font-size: 18px;
     color: var(--orange);
     text-transform: uppercase;
@@ -778,7 +787,7 @@ h3.title {
 .subscribe-form {
   // .subscribe-form__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 48px;
     line-height: 52px;
     color: var(--blue);
@@ -793,7 +802,7 @@ h3.title {
     background-color: var(--white);
     padding-left: 28px;
     font-size: 16px;
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     margin-bottom: 22px;
     display: block;
     width: 100%;
@@ -804,7 +813,7 @@ h3.title {
   }
   // .subscribe-form__policy
   &__policy {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 13px;
     line-height: 18px;
     color: var(--gray900);
@@ -828,7 +837,7 @@ h3.title {
   }
   // .about__text
   &__text {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 19px;
@@ -844,7 +853,7 @@ h3.title {
   background: none;
 }
 .breadcrumb-item {
-  font-family: "PFDinTextPro-Light", sans-serif;
+  font-family: var(--light-font);
   font-size: 14px;
   line-height: 22px;
   a {
@@ -876,7 +885,7 @@ h3.title {
   margin-bottom: 85px;
   // .company-info__text
   &__text {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
     margin-top: 40px;
@@ -902,7 +911,7 @@ h3.title {
   }
   // .about-geografy__item
   &__item {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     color: var(--white);
     display: block;
@@ -960,7 +969,7 @@ h3.title {
   }
   // .about-partner__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     text-transform: uppercase;
     padding-left: 22px;
@@ -968,7 +977,7 @@ h3.title {
   }
   // .about-partner__name
   &__name {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 48px;
     text-transform: uppercase;
     color: var(--orange900);
@@ -977,7 +986,7 @@ h3.title {
   }
   // .about-partner__text
   &__text {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
     padding-left: 22px;
@@ -993,7 +1002,7 @@ h3.title {
   &__link {
     padding-left: 22px;
     a {
-      font-family: "PFDinTextCompPro-Regular", sans-serif;
+      font-family: var(--regular-comp);
       font-size: 18px;
       text-transform: uppercase;
       color: var(--orange);
@@ -1035,7 +1044,7 @@ h3.title {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     color: var(--gray600);
     background-color: var(--gray10);
@@ -1056,7 +1065,7 @@ h3.title {
   &__lnk {
     display: block;
     text-align: center;
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 14px;
     line-height: 40px;
     color: var(--blue);
@@ -1079,7 +1088,7 @@ h3.title {
   }
   &.active {
     .page-link {
-      font-family: "PFDinTextPro-Medium", sans-serif;
+      font-family: var(--medium-font);
       color: var(--blue);
       background-color: var(--white);
       border-color: var(--blue);
@@ -1092,7 +1101,7 @@ h3.title {
   }
 }
 .page-link {
-  font-family: "PFDinTextPro-Light", sans-serif;
+  font-family: var(--light-font);
   font-size: 14px;
   line-height: 28px;
   color: var(--blue);
@@ -1169,7 +1178,7 @@ h3.title {
   }
   // .item-catalog__name
   &__name {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -1245,7 +1254,7 @@ h3.title {
   }
   // .contacts__info
   &__info {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
   }
@@ -1253,7 +1262,7 @@ h3.title {
 .contact-item {
   // .contact-item__name
   &__name {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
     color: var(--gray500);
@@ -1261,7 +1270,7 @@ h3.title {
   }
   // .contact-item__text1
   &__text1 {
-    font-family: "PFDinTextPro-Medium", sans-serif;
+    font-family: var(--medium-font);
     font-size: 20px;
     line-height: 30px;
     min-height: 60px;
@@ -1269,7 +1278,7 @@ h3.title {
   }
   // .contact-item__text2
   &__text2 {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
   }
@@ -1277,7 +1286,7 @@ h3.title {
   &__link {
     margin-top: 8px;
     a {
-      font-family: "PFDinTextCompPro-Regular", sans-serif;
+      font-family: var(--regular-comp);
       font-size: 16px;
       line-height: 25px;
       text-transform: uppercase;
@@ -1305,7 +1314,7 @@ h3.title {
 .delivery-payment-page {
   padding: 42px 0 96px 0;
   .bold {
-    font-family: "PFDinTextPro-Medium", sans-serif;
+    font-family: var(--medium-font);
     font-weight: 400;
   }
   a {
@@ -1332,7 +1341,7 @@ h3.title {
   }
   // .delivery-payment-page__text
   &__text {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 30px;
     .txt-color-blue {
@@ -1368,7 +1377,7 @@ h3.title {
     padding: 18px 0 19px;
     margin: 33px 0 38px;
     span {
-      font-family: "PFDinTextPro-Medium", sans-serif;
+      font-family: var(--medium-font);
       color: var(--blue);
     }
   }
@@ -1376,7 +1385,7 @@ h3.title {
 .dap-banner {
   // .dap-banner__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 72px;
     text-transform: uppercase;
     letter-spacing: -0.5px;
@@ -1389,7 +1398,7 @@ h3.title {
   }
   // .dap-banner__list-item
   &__list-item {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 22px;
     padding-left: 40px;
@@ -1432,7 +1441,7 @@ h3.title {
 .dap-list {
   // .dap-list__item
   &__item {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 36px;
     position: relative;
@@ -1481,7 +1490,7 @@ h3.title {
   padding-top: 37px;
   // .feedback__title
   &__title {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     text-transform: uppercase;
     margin: 0 0 2px;
@@ -1521,13 +1530,13 @@ h3.title {
   }
   // .product-feedback__name
   &__name {
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 36px;
     text-transform: uppercase;
   }
   // .product-feedback__props
   &__props {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 18px;
     line-height: 26px;
     color: var(--blue);
@@ -1540,7 +1549,7 @@ h3.title {
   }
   // .form-feedback__label
   &__label {
-    font-family: "PFDinTextPro-Medium", sans-serif;
+    font-family: var(--medium-font);
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -1566,7 +1575,7 @@ h3.title {
   }
   // .form-feedback__file-note
   &__file-note {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 16px;
     line-height: 26px;
     p {
@@ -1583,14 +1592,14 @@ h3.title {
   }
   // .form-feedback__name
   &__name {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 11px;
   }
   // .form-feedback__anonimus
   &__anonimus {
-    font-family: "PFDinTextPro-Light", sans-serif;
+    font-family: var(--light-font);
     font-size: 16px;
     line-height: 26px;
     .custom-control-label {
@@ -1698,9 +1707,144 @@ h3.title {
     align-items: center;
     justify-content: center;
     border-left: 1px solid var(--gray10);
-    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-family: var(--medium-comp);
     font-size: 32px;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
+  }
+}
+
+/*showroom page*/
+.showroom-page {
+  padding: 42px 0 148px 0;
+  .section-title {
+    margin-bottom: 33px;
+  }
+}
+.showroom {
+  margin-top: 33px;
+  // .showroom__text
+  &__text {
+    font-family: var(--light-font);
+    font-size: 18px;
+    line-height: 30px;
+    &.text1 {
+      margin-bottom: 43px;
+    }
+    &.text2 {
+      margin-bottom: 62px;
+      p {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  // .showroom__slider
+  &__slider {
+    margin-bottom: 78px;
+    padding-bottom: 60px;
+    img {
+      margin: 0 15px;
+    }
+    .slick-dots,
+    .slick-next,
+    .slick-prev {
+      bottom: 0;
+    }
+    .slick-next {
+    }
+    .slick-prev {
+    }
+  }
+  // .showroom__partners
+  &__partners {
+    margin-bottom: 66px;
+  }
+  // .showroom__catalog-btn
+  &__catalog-btn {
+    margin-bottom: 138px;
+    .btn {
+      width: 100%;
+      max-width: 225px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  // .showroom__map
+  &__map {
+  }
+  // .showroom__info
+  &__info {
+    padding-top: 5px;
+  }
+}
+.partner {
+  display: flex;
+  padding: 35px 0 37px;
+  border: 2px solid var(--gray10);
+  height: 100%;
+  // .partner__image
+  &__image {
+    flex: 0 0 260px;
+    max-width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .partner__text
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--light-font);
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray300);
+    border-left: 1px solid var(--gray10);
+  }
+}
+.info-showroom {
+  // .info-showroom__title
+  &__title {
+    font-family: var(--medium-comp);
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 41px;
+  }
+  // .info-showroom__adres
+  &__adres {
+    font-family: var(--light-font);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 57px;
+  }
+  // .info-showroom__phone
+  &__phone {
+    font-family: var(--medium-font);
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 63px;
+    a {
+      color: var(--black);
+    }
+  }
+  // .info-showroom__time
+  &__time {
+    font-family: var(--light-font);
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 67px;
+  }
+  // .info-showroom__map-btn
+  &__map-btn {
+    font-family: var(--regular-comp);
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    a {
+      color: var(--orange);
+    }
   }
 }

@@ -1,5 +1,3 @@
-@@include("dynamic_adapt.js");
-
 function testWebP(callback) {
   var webP = new Image();
   webP.onload = webP.onerror = function () {
@@ -31,8 +29,16 @@ $(".slider-main").slick({
   speed: 300,
   slidesToShow: 1,
   variableWidth: true,
-  // autoplay: true,
+  autoplay: true,
   autoplaySpeed: 5000,
+});
+$(".showroom__slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
 });
 
 $(".swichers-slider__link").click(function (e) {
