@@ -31,7 +31,7 @@ $(".slider-main").slick({
   speed: 300,
   slidesToShow: 1,
   variableWidth: true,
-  autoplay: true,
+  // autoplay: true,
   autoplaySpeed: 5000,
 });
 

@@ -2,6 +2,7 @@
   --black: #000;
   --white: #fff;
   --gray10: #f4f3f3;
+  --gray400: #7f7f7f;
   --gray500: #9b9b9b;
   --gray600: #6d6d6d;
   --gray700: #a7a7a7;
@@ -423,6 +424,7 @@ h3.title {
     width: 263px;
     margin: 30px 15px;
     position: relative;
+    padding-bottom: 64px;
     &:hover {
       &::after {
         content: "";
@@ -441,11 +443,12 @@ h3.title {
       .slider-main__quick-view {
         opacity: 0.8;
       }
-      .btn-outline-primary {
-        display: block;
+      .slider-main__hiden {
+        opacity: 1;
       }
       &.no-stock {
-        .btn-outline-primary {
+        padding-bottom: 0;
+        .slider-main__hiden {
           display: none;
         }
       }
@@ -601,10 +604,16 @@ h3.title {
         padding-right: 13px;
       }
     }
-    .btn-outline-primary {
-      flex: 1 1 100%;
-      margin-top: 10px;
-      display: none;
+  }
+  // .slider-main__hiden
+  &__hiden {
+    margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    // top: 100%;
+    .btn {
+      width: 100%;
     }
   }
 }
@@ -647,7 +656,7 @@ h3.title {
   .form-control {
     color: var(--gray700);
   }
-  .btn-outline-primary {
+  .slider-main__hiden {
     display: none;
   }
 }
@@ -1012,12 +1021,12 @@ h3.title {
   }
   // .actions__filter
   &__filter {
-    margin: 21px 0 23px 0;
+    margin: 21px 0 33px 0;
   }
   // .actions__item
   &__item {
     .slider-main__item {
-      margin: 20px 0 50px;
+      margin: 15px 0 0;
     }
   }
   // .actions__banner
@@ -1460,5 +1469,184 @@ h3.title {
   &__cards {
     margin-top: 32px;
     margin-bottom: 62px;
+  }
+}
+
+/*feedback page*/
+.feedback-page {
+  padding-top: 42px;
+  padding-bottom: 81px;
+}
+.feedback {
+  padding-top: 37px;
+  // .feedback__title
+  &__title {
+    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0 0 2px;
+  }
+  // .feedback__page
+  &__page {
+    margin-bottom: 44px;
+  }
+  // .feedback__page-lnk
+  &__page-lnk {
+    font-size: 16px;
+    line-height: 25px;
+    display: inline-block;
+    color: var(--blue);
+  }
+  // .feedback__product
+  &__product {
+    margin-bottom: 32px;
+  }
+  // .feedback__form
+  &__form {
+  }
+}
+.product-feedback {
+  // .product-feedback__image
+  &__image {
+    width: 165px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--gray10);
+  }
+  // .product-feedback__info
+  &__info {
+    margin-top: -4px;
+  }
+  // .product-feedback__name
+  &__name {
+    font-family: "PFDinTextCompPro-Medium", sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+  // .product-feedback__props
+  &__props {
+    font-family: "PFDinTextPro-Light", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--blue);
+  }
+}
+.form-feedback {
+  // .form-feedback__review
+  &__review {
+    margin-bottom: 31px;
+  }
+  // .form-feedback__label
+  &__label {
+    font-family: "PFDinTextPro-Medium", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 0 14px 0;
+  }
+  // .form-feedback__textarea
+  &__textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 2px solid var(--gray10);
+    padding: 10px;
+  }
+  // .form-feedback__image
+  &__image {
+    margin-bottom: 34px;
+  }
+  // .form-feedback__file
+  &__file {
+    padding-top: 7px;
+    margin-bottom: 9px;
+  }
+  // .form-feedback__file-note
+  &__file-note {
+    font-family: "PFDinTextPro-Light", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    p {
+      color: var(--gray400);
+    }
+  }
+  // .form-feedback__btn
+  &__btn {
+    border-top: 2px solid var(--gray10);
+    padding-top: 29px;
+    .btn {
+      width: 100%;
+    }
+  }
+  // .form-feedback__name
+  &__name {
+    font-family: "PFDinTextPro-Light", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 11px;
+  }
+  // .form-feedback__anonimus
+  &__anonimus {
+    font-family: "PFDinTextPro-Light", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    .custom-control-label {
+      color: var(--gray400);
+    }
+  }
+}
+.custom-file {
+  position: relative;
+  display: block;
+  height: auto;
+  // .custom-file__input-file
+  &__input-file {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    z-index: 0;
+  }
+  // .custom-file__label-file
+  &__label-file {
+    width: 165px;
+    height: 110px;
+    background: url("../img/icons/plus.png") center no-repeat var(--gray10);
+    cursor: pointer;
+    margin: 0;
+  }
+}
+
+/*custom checkbox*/
+.custom-control {
+  padding-left: 36px;
+}
+.custom-checkbox {
+  .custom-control-label::before {
+    border-radius: 0;
+  }
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: var(--gray10);
+}
+.custom-control-label {
+  cursor: pointer;
+  &::before {
+    border-color: var(--gray10);
+    background-color: var(--gray10);
+  }
+  &::after,
+  &::before {
+    width: 20px;
+    height: 20px;
+    left: -36px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

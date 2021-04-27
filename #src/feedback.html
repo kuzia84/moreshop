@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>More magazin</title>
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	@@include('_header.html')
+	<div class="page-content feedback-page">
+		<div class="breadcrumb-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/">Главная</a></li>
+								<li class="breadcrumb-item"><a href="/">Приманки</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Виброхвост BALZER SHIRASU Pike Collector</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="feedback">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h3 class="feedback__title">ваш отзыв о товаре</h3>
+						<div class="feedback__page"><a href="#" class="feedback__page-lnk">Страница товара</a></div>
+						<div class="feedback__product product-feedback">
+							<div class="row">
+								<div class="col-xl-2">
+									<div class="product-feedback__image">
+										<img src="./img/products/01.png" alt="Виброхвост BALZER SHIRASU Pike Collector">
+									</div>
+								</div>
+								<div class="col-xl-10">
+									<div class="product-feedback__info">
+										<div class="product-feedback__name">Виброхвост BALZER SHIRASU Pike Collector</div>
+										<div class="product-feedback__props">15 см/25 г Fireshark 13672 415</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<form action="" class="feedback__form form-feedback">
+							<div class="form-feedback__review">
+								<label for="feedback-review" class="form-feedback__label">Текст отзыва:</label>
+								<textarea name="feedback-review" id="feedback-review" class="form-feedback__textarea"></textarea>
+							</div>
+							<div class="form-feedback__image">
+								<div class="form-feedback__label">Добавьте фотографии:</div>
+								<div class="form-feedback__file custom-file">
+									<input type="file" name="feedback-file" id="feedback-file" class="custom-file__input-file">
+									<label for="feedback-file" class="custom-file__label-file"></label>
+								</div>
+								<div class="form-feedback__file-note">
+									Нажмите на кнопку или перетащите фото в эту область
+									<p>до 10 изображений в формате PNG, JPEG.</p>
+								</div>
+							</div>
+							<div class="form-feedback__btn">
+								<div class="row">
+									<div class="col-xl-3">
+										<button class="btn btn-warning" type="submit">оставить отзыв</button>
+									</div>
+									<div class="col-xl-9">
+										<div class="form-feedback__name">Вы оставляете отзыв как Александр Иванов</div>
+										<div class="form-feedback__anonimus">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="anonimus">
+												<label class="custom-control-label" for="anonimus">Опубликовать анонимно</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	@@include('_footer.html')
+	@@include('_modal.html')
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
