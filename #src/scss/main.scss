@@ -62,6 +62,25 @@ textarea {
   }
 }
 
+/*custom scrool*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue) var(--gray10);
+}
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: var(--gray10);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 20px;
+  // border: 3px solid var(--gray10);
+}
+
 /*contaainer*/
 @media (min-width: 1200px) {
   .container {
