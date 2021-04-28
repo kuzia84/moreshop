@@ -40,6 +40,14 @@ $(".showroom__slider").slick({
   centerMode: true,
   variableWidth: true,
 });
+$(".gallery-slider").slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+});
 
 $(".swichers-slider__link").click(function (e) {
   e.preventDefault();
