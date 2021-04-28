@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>More magazin</title>
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	@@include('_header.html')
+	<div class="page-content items-page">
+		<div class="breadcrumb-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="/">Главная</a></li>
+								<li class="breadcrumb-item"><a href="catalog.html">Каталог товаров</a></li>
+								<li class="breadcrumb-item"><a href="primanki.html">Приманки</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Воблеры</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="items-page__content content-items">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="section-title text-left">Приманки</h2>
+					</div>
+					<div class="col-xl-3">
+						<div class="content-items__filters filters-items">
+							<div class="filters-items__filter">
+								<div class="filters-items__title">производитель:</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Deeps">
+											<label class="custom-control-label" for="Deeps">Deeps</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="DUO">
+											<label class="custom-control-label" for="DUO">DUO</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Lucky-Craft">
+											<label class="custom-control-label" for="Lucky-Craft">Lucky Craft</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Megabass">
+											<label class="custom-control-label" for="Megabass">Megabass</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="Minnows-Inc">
+											<label class="custom-control-label" for="Minnows-Inc">Minnows Inc</label>
+										</div>
+									</li>
+								</ul>
+								<div class="filters-items__more">
+									<a href="#" class="filters-items__more-link">Показать все</a>
+								</div>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">тип приманки:</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="crouler">
+											<label class="custom-control-label" for="crouler">Кроулер</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="crank">
+											<label class="custom-control-label" for="crank">Крэнк </label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="minnou">
+											<label class="custom-control-label" for="minnou">Минноу</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="stick">
+											<label class="custom-control-label" for="stick">Стик</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="rattling">
+											<label class="custom-control-label" for="rattling">Раттлин/Виб</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="popper">
+											<label class="custom-control-label" for="popper">Поппер</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="walker">
+											<label class="custom-control-label" for="walker">Уокер/Волкер</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="combined">
+											<label class="custom-control-label" for="combined">Составник</label>
+										</div>
+									</li>
+								</ul>
+								<div class="filters-items__more">
+									<a href="#" class="filters-items__more-link">Показать все</a>
+								</div>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">материал:</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="material1">
+											<label class="custom-control-label" for="material1">Материал 1</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="material2">
+											<label class="custom-control-label" for="material2">Материал 2</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="material3">
+											<label class="custom-control-label" for="material3">Материал 3</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="material4">
+											<label class="custom-control-label" for="material4">Материал 4</label>
+										</div>
+									</li>
+								</ul>
+								<div class="filters-items__more">
+									<a href="#" class="filters-items__more-link">Показать все</a>
+								</div>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">вес (гр):</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="gr5">
+											<label class="custom-control-label" for="gr5">5</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="gr5-10">
+											<label class="custom-control-label" for="gr5-10">от 5 до 10</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="gr10-15">
+											<label class="custom-control-label" for="gr10-15">от 10 до 15</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="gr15-20">
+											<label class="custom-control-label" for="gr15-20">от 15 до 20</label>
+										</div>
+									</li>
+								</ul>
+								<div class="filters-items__more">
+									<a href="#" class="filters-items__more-link">Показать все</a>
+								</div>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">Длина (см):</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="cm5">
+											<label class="custom-control-label" for="cm5">5</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="cm5-10">
+											<label class="custom-control-label" for="cm5-10">от 5 до 10</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="cm10-15">
+											<label class="custom-control-label" for="cm10-15">от 10 до 15</label>
+										</div>
+									</li>
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="cm15-20">
+											<label class="custom-control-label" for="cm15-20">от 15 до 20</label>
+										</div>
+									</li>
+								</ul>
+								<div class="filters-items__more">
+									<a href="#" class="filters-items__more-link">Показать все</a>
+								</div>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">плавучесть:</div>
+								<ul class="filters-items__list">
+									<li class="filters-items__item">
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="floating">
+											<label class="custom-control-label" for="floating">Плавающий</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="filters-items__filter">
+								<div class="filters-items__title">Цена (руб):</div>
+								<div class="filters-items__price">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="price-from-addon">от</span>
+										</div>
+										<input type="text" class="form-control" value="1" aria-describedby="price-from-addon">
+									</div>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="price-to-addon">до</span>
+										</div>
+										<input type="text" class="form-control" value="15000" aria-describedby="price-to-addon">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9">
+						<div class="content-items__sort sort-items">
+							<div class="sort-items__title">сортировка:</div>
+							<div class="sort-items__type sort-type">
+								<a href="#" class="sort-type__item active increase-type">По цене</a>
+								<a href="#" class="sort-type__item">По популярности</a>
+							</div>
+							<div class="sort-items__discount">
+								<div class="custom-control custom-checkbox">
+									<input type="checkbox" class="custom-control-input" id="show-discount">
+									<label class="custom-control-label" for="show-discount">Со скидками</label>
+								</div>
+							</div>
+						</div>
+						<div class="content-items__tags filer-tags">
+							<ul class="filer-tags__list">
+								<li class="filer-tags__item">
+									<div class="filer-tags__tag">
+										<div class="filer-tags__name">Поппер</div>
+										<a href="#" class="filer-tags__close"></a>
+									</div>
+								</li>
+								<li class="filer-tags__item">
+									<div class="filer-tags__tag">
+										<div class="filer-tags__name">Deeps</div>
+										<a href="#" class="filer-tags__close"></a>
+									</div>
+								</li>
+							</ul>
+							<div class="filer-tags__reset">
+								<a href="#" class="filer-tags__reset-btn">Сбросить все фильтры</a>
+							</div>
+						</div>
+						<div class="content-items__items-list">
+							<div class="row">
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new item-discount">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<div class="slider-main__discount slider-main__item-option">скидка</div>
+											<img src="./img/main-slider/01.png" alt="Shirasu IM-12 Big Bait Cast">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">
+											<div class="slider-main__new-price">45 000 руб.</div>
+											<div class="slider-main__old-price">47 590 руб.</div>
+										</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Shirasu IM-12 Big Bait Cast <br>&nbsp;</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new item-discount">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<div class="slider-main__discount slider-main__item-option">скидка</div>
+											<img src="./img/main-slider/01.png" alt="Shirasu IM-12 Big Bait Cast">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">
+											<div class="slider-main__new-price">45 000 руб.</div>
+											<div class="slider-main__old-price">47 590 руб.</div>
+										</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Shirasu IM-12 Big Bait Cast <br>&nbsp;</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new item-discount">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<div class="slider-main__discount slider-main__item-option">скидка</div>
+											<img src="./img/main-slider/01.png" alt="Shirasu IM-12 Big Bait Cast">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">
+											<div class="slider-main__new-price">45 000 руб.</div>
+											<div class="slider-main__old-price">47 590 руб.</div>
+										</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Shirasu IM-12 Big Bait Cast <br>&nbsp;</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new item-discount">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<div class="slider-main__discount slider-main__item-option">скидка</div>
+											<img src="./img/main-slider/01.png" alt="Shirasu IM-12 Big Bait Cast">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">
+											<div class="slider-main__new-price">45 000 руб.</div>
+											<div class="slider-main__old-price">47 590 руб.</div>
+										</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Shirasu IM-12 Big Bait Cast <br>&nbsp;</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-4">
+									<div class="content-items__item slider-main__item item-new">
+										<div class="slider-main__image">
+											<div class="slider-main__like"></div>
+											<div class="slider-main__new slider-main__item-option">НОВИНКА</div>
+											<img src="./img/main-slider/02.png" alt="Блесна RB Атом-N незацепляйка">
+											<a href="#" class="slider-main__quick-view">быстрый просмотр</a>
+										</div>
+										<div class="slider-main__price">389 руб.</div>
+										<div class="slider-main__stock">В наличии</div>
+										<div class="slider-main__name">Блесна RB (Русская Блесна) Атом-N "незацепляйка"</div>
+										<div class="slider-main__props">
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Вес</div>
+												<div class="item-prop__value">65-250 г.</div>
+											</div>
+											<div class="slider-main__prop item-prop">
+												<div class="item-prop__name">Длина</div>
+												<div class="item-prop__value">2,4 м.</div>
+											</div>
+										</div>
+										<div class="slider-main__hiden">
+											<a href="#" class="btn btn-outline-primary">подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="content-items__show-more show-more"><a href="#" class="show-more__lnk">Показать еще</a></div>
+						<div class="content-items__pagination">
+							<nav aria-label="content-items">
+								<ul class="pagination">
+									<li class="page-item disabled">
+										<span class="page-link">Пердыдущая</span>
+									</li>
+									<li class="page-item active" aria-current="page">
+										<span class="page-link">
+											1
+											<span class="sr-only">(current)</span>
+										</span>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#">Следующая</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	@@include('_footer.html')
+	@@include('_modal.html')
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
