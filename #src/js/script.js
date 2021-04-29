@@ -39,6 +39,8 @@ $(".showroom__slider").slick({
   slidesToShow: 1,
   centerMode: true,
   variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
 $(".gallery-slider").slick({
   dots: true,
@@ -47,6 +49,8 @@ $(".gallery-slider").slick({
   slidesToShow: 1,
   centerMode: true,
   variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
 });
 
 $(".swichers-slider__link").click(function (e) {
