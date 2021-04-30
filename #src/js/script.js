@@ -32,6 +32,15 @@ $(".slider-main").slick({
   autoplay: true,
   autoplaySpeed: 5000,
 });
+$(".photos-reviews__slider").slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+});
 $(".showroom__slider").slick({
   dots: true,
   infinite: true,
@@ -51,6 +60,22 @@ $(".gallery-slider").slick({
   variableWidth: true,
   autoplay: true,
   autoplaySpeed: 5000,
+});
+
+$(".product-info__slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".product-info__slider-nav",
+});
+$(".product-info__slider-nav").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: ".product-info__slider",
+  dots: false,
+  focusOnSelect: true,
+  vertical: true,
 });
 
 $(".swichers-slider__link").click(function (e) {
